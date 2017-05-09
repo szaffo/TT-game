@@ -1,0 +1,757 @@
+/* devanagari */
+@font-face {
+  font-family: 'Kalam';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Kalam Light'), local('Kalam-Light'), url(https://fonts.gstatic.com/s/kalam/v7/FRYSlhhsGi7stZyo1rxvxhTbgVql8nDJpwnrE27mub0.woff2) format('woff2');
+  unicode-range: U+02BC, U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200B-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Kalam';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Kalam Light'), local('Kalam-Light'), url(https://fonts.gstatic.com/s/kalam/v7/8VhnW_PBo_z8b_9n3cExhxTbgVql8nDJpwnrE27mub0.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Kalam';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Kalam Light'), local('Kalam-Light'), url(https://fonts.gstatic.com/s/kalam/v7/hTIz1EhZk15xkDsCgpOJLvesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Kalam';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Kalam'), local('Kalam-Regular'), url(https://fonts.gstatic.com/s/kalam/v7/diMbwchVDQTcqIZqiNAv9Q.woff2) format('woff2');
+  unicode-range: U+02BC, U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200B-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Kalam';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Kalam'), local('Kalam-Regular'), url(https://fonts.gstatic.com/s/kalam/v7/oJcupP4-wXgwcVbtsC-kZA.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Kalam';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Kalam'), local('Kalam-Regular'), url(https://fonts.gstatic.com/s/kalam/v7/IOem-i1iklYvPM2B8plGmg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Kalam';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Kalam Bold'), local('Kalam-Bold'), url(https://fonts.gstatic.com/s/kalam/v7/6uL4LfJ9gl9nAvHpVEHMbRTbgVql8nDJpwnrE27mub0.woff2) format('woff2');
+  unicode-range: U+02BC, U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200B-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Kalam';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Kalam Bold'), local('Kalam-Bold'), url(https://fonts.gstatic.com/s/kalam/v7/VeSVC2zXWQiG_N4AAmtVwRTbgVql8nDJpwnrE27mub0.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Kalam';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Kalam Bold'), local('Kalam-Bold'), url(https://fonts.gstatic.com/s/kalam/v7/V6yS6HmuVV3o39pJxMtJC_esZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+
+html {
+
+	min-height: 100%;
+
+}
+
+body {
+
+	margin: 0px;
+	opacity: 0;
+	display: block;
+	font-family: 'kalam';
+	/*min-height: 100vh;*/
+	/*transition: opacity 0.9s;*/
+	overflow-x: hidden;
+}
+
+* {
+	transition: all 0.6s;
+	transition-timing-function: cubic-bezier(0, 0, 0.11, 0.99);
+	position: relative;
+}
+
+*:active {
+	outline: 0px;
+}
+
+header {
+
+	height: 14vh;
+	background-color: #4D9461;
+	color: #5A5957;
+	padding-left: 2.5vw;
+	font-variant: small-caps;
+	position: fixed;
+	right: 0px;
+	left: 0px;
+	transition-property: all;
+	transition-duration: 0.6s;
+	z-index: 77;
+
+}
+
+header h1 {
+
+	display: inline;
+	padding: 0px;
+	font-size: 12.1vh;
+    line-height: 1.3;
+	transition: inherit;
+}
+
+header div.headerBox {
+
+	display: inline;
+    height: inherit;
+    overflow: hidden;
+    float: right;
+    width: 30vw;
+    height: 100%;
+    padding-right: 1.2vw;
+    color: inherit;
+
+}
+
+header div.infoBox {
+
+	float: right;
+	width: auto;
+	min-width: 16vw;
+	height: 90%;
+	margin-top: 1%;
+	margin-right: 1%;
+	padding-right: 0px;
+	text-align: right;
+	border-right: 0.35vh solid #5a5957;
+
+}
+
+header div.infoBox h2 {
+
+	line-height: 1;
+    padding: 0px;
+    font-size: 4vh;
+    /* top: -1%; */
+    font-weight: 900;
+    font-size: 4.0vh;
+    padding-right: 3%;
+    border-top: 0.35vh solid #5a5957;
+    padding-top: 1%;
+    margin: 0px;
+    margin-top: 2%;
+
+}
+
+header div.infoBox p {
+
+    line-height: 0.9;
+    margin: 0px;
+	top: 5%;
+    /*border-bottom: 0.35vh solid #5a5957;*/
+    font-size: 2.6vh;
+    font-weight: 200;
+    padding-right: 3%;
+
+
+}
+
+header div.imageBox {
+
+	float: right;
+	width: 6vw;
+	height: 85%;
+	margin-top: 1%;
+    padding: 0px;
+    border: 0.35vh solid;
+
+}
+
+header div.imageBox img {
+
+	width: 100%;
+    height: auto;
+    border: none;
+
+}
+
+header div.infoButton {
+
+	display: none;
+	position: fixed;
+    height: 5.8vh;
+    width: auto;
+    right: 1.5%;
+    top: 0.5%;
+
+}
+
+header div.menuHideMenuButton {
+	display: inline;
+    position: fixed;
+    top: 14.5vh;
+    left: 7.1vw;
+    opacity: 0.6;
+}
+
+header div.menuButton {
+
+	display: none;
+	position: fixed;
+    height: 5.8vh;
+    width: auto;
+    left: 1.5%;
+    top: 0.5%;
+    z-index: 78;
+
+}
+
+@media screen and (max-width: 900px) {
+
+	header div.headerBox {
+
+		width: 50vw;
+	}
+
+	header div.infoBox {
+
+		width: auto;
+
+	}
+
+	header div.imageBox {
+
+		width: 11.5vw;
+
+	}
+
+}
+
+@media screen and (max-width: 700px) {
+
+
+	header div.infoBox {
+
+		min-width: 0px;
+
+	}
+
+}
+
+@media screen and (orientation: portrait) {
+
+	header {
+
+		text-align: center;
+		height: 7vh;
+
+	}
+
+	header h1 {
+
+		font-size: 6vh;
+		line-height: 1.3;
+
+	}
+
+	header div.headerBox {
+
+		position: fixed;
+		padding-right: 0px;
+		top: 7vh;
+		right: -90%;
+		width: 90%;
+		height: 90%;
+		background-color: #5a5957;
+
+	}
+
+	header div.infoBox {
+
+		position: relative;
+		display: block;
+		height: 30%;
+		width: auto;
+		float: none;
+		background-color: rgba(77, 148, 97, 0.0);
+		text-align: center;
+		border: 0px;
+		top: 6vh;
+		color: #4d9461;
+
+	}
+
+	header div.infoBox p {
+
+		position: relative;
+		font-size: 5vh;
+		border-bottom: 0.65vh solid;
+		border-top: 0.65vh solid;
+		padding-top: 2%;
+		padding-right: 0px;
+		/*top: 9vh;*/
+
+	}
+
+	header div.infoBox h2 {
+
+		font-size: 8vh;
+		/*top: -18vh;*/
+		width: 100%;
+		position: relative;
+		text-align: center;
+		margin-top: 3vh;
+
+	}
+
+	header div.imageBox {
+
+		position: relative;
+		display: block;
+		height: 30%;
+		width: auto;
+		float: none;
+		background-color: rgba(77, 148, 97, 0.0);
+		top: 5vh;
+		border: none;
+
+
+	}
+
+	header div.imageBox img {
+
+		border: 0.65vh solid;
+		border-radius: 2px;
+		height: 94%;
+		width: auto;
+
+	}
+
+	header div.infoButton {
+
+		display: block;
+
+	}
+
+}
+/*
+ * ----------------------------------- HEADER | NAV MENU -----------------------------------------------------------------------------------}
+*/
+
+nav {
+
+	height: 86vh;
+	top: 14vh;
+    width: 9vw;
+    background: rgba(77, 148, 97, 0.66);
+    position: fixed;
+    z-index: 76;
+    text-align: center;
+
+}
+
+nav form {
+
+	display: flex;
+	flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+nav form button {
+
+	background-color: rgba(0,0,0,0);
+	margin: 0px;
+	padding: 0px;
+	color: #5a5957;
+
+}
+
+
+@media screen and (max-width: 1000px) and (orientation: landscape) {
+
+	nav {
+		width: 100%;
+		height: 10vh;
+		padding-top: 0.2vh;
+	}
+
+	nav form {
+
+		flex-direction: row;
+		justify-content: space-around;
+
+	}
+
+	nav form button {
+
+		font-size: 2.5vh;
+
+	}
+
+}
+
+@media screen and (orientation: portrait) {
+
+	header div.menuButton {
+
+		display: block;
+
+	}
+
+	nav {
+		position: fixed;
+	    left: -50%; 
+	    width: 50%;
+	    top: 7vh;
+	    height: 90%;
+	    background: #5a5957; 
+	}
+
+	nav form button {
+
+		color: #4d9461;
+		
+	}
+
+}
+/*--------------------------LOGIN SECTION-------------------------------*/
+
+.bodyLogin {
+	background: rgba(135, 133, 130, 0.30);
+}
+
+.headerLogin {
+
+	position: relative;
+    width: 70%;
+    margin: auto;
+    margin-top: 4%;
+}
+
+.contentLogin {
+
+	position: relative;
+    margin: auto;
+    width: 68.8%;
+    display: block;
+    height: 50%;
+    background-color: rgba(77, 148, 97, 0.6);
+   	padding: 1vw;
+    padding-left: 2.3vw;
+}
+
+.contentLogin h3 {
+
+	margin: 1px;
+    font-size: 6vh;
+    font-variant: small-caps;
+
+}
+
+.contentLogin label {
+
+	margin: 0px;
+    padding-left: 0.6vw;
+    margin-top: 3%;
+    display: block;
+
+}
+
+@media screen and (orientation: portrait) {
+	.headerLogin {
+
+		margin-top: 0px;
+		width: 100%;
+	}
+
+	.contentLogin {
+
+		width: 100%;
+		height: 93vh;
+		text-align: center;
+		padding-right: 2.3vw;
+
+	}
+
+	.contentLogin h3 {
+
+		font-size: 9vh;
+
+	}
+
+	.contentLogin label {
+
+		font-size: 6vh;
+
+	}
+}
+
+/*________________________________CONTENT SECTION________________________________________________________*/
+
+div.content {
+
+    background: #5a5957;
+    min-height: 100vh;
+    width: 86vw;
+    left: 9vw;
+    padding-top: 16vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.flex-direction-column {
+	flex-direction: column;
+}
+
+div.content form {
+
+	display: flex;
+    position: relative;
+    background: #4d9461;
+    margin-bottom: 3vh;
+    padding-left: 1vw;
+    flex-wrap: wrap;
+}
+
+div.content form button {
+
+	margin: 1vh 0.5vw;
+	max-width: 200px;
+}
+
+div.itemBox {
+
+	background: rgba(161, 174, 170, 0.75);
+	height: 20vh;
+	width: 100%;
+	margin-bottom: 3vh;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+
+}
+
+div.itemBox .itemBoxInfo {
+
+    width: 100%;
+    height: 100%;
+    display: inline;
+    float: left;
+	border-left: 0.4vw solid #4d9461;
+	/*border-right: 0.4vw solid #4d9461;*/
+    padding-left: 0.6vw;
+
+}
+
+div.itemBox .itemBoxInfo h4 {
+
+    margin: 0px;
+    margin-left: 0vw;
+    font-size: 2.2vw;
+    line-height: 1;
+    margin-top: 2vh
+
+}
+
+div.itemBox .itemBoxInfo p {
+
+	margin: 0px;
+	line-height: 1.2;
+    font-size: 1.3vw;
+    margin-left: 1vw;
+
+
+}
+
+div.itembox img {
+
+	max-height: 100%;
+	width: auto;
+
+}
+
+div.itemBox form {
+
+	margin: 0px;
+    display: flex;
+    background-color: rgba(0,0,0,0);
+}
+
+div.itemBox form button {
+
+	margin: 0 2vw 0 0;
+    align-self: center;
+    /*height: 50%;*/
+    white-space: nowrap;
+
+}
+
+@media screen and (max-width: 1000px) {
+
+	div.content {
+		left: 0px;
+		width: auto;
+		padding-top: 27vh; 
+	}
+
+	div.itemBox .itemBoxInfo h4 {
+
+		font-size: 4vh;
+	}
+
+	div.itemBox .itemBoxInfo p {
+
+		font-size: 3vh;
+	}
+
+	div.itemBox form button {
+
+		font-size: 2.6vh;
+	}
+}
+
+@media screen and (orientation: portrait) {
+
+	div.content {
+
+		padding-top: 8vh;
+
+	}
+
+	div.itemBox {
+
+		height: 31vh;
+		flex-wrap: wrap;
+
+	}
+
+	div.itemBox .itemBoxInfo {
+
+		height: 30vw;
+		width: 65vw;
+		border-bottom: 0.4vw solid #4d9461;
+
+	}
+
+	div.itemBox .itemBoxInfo h4 {
+
+		font-size: 11vw;
+
+	}
+
+	div.itemBox .itemBoxInfo p {
+
+		font-size: 4.6vw;
+	    line-height: 1;
+
+	}
+
+	div.itembox img {
+
+		height: 30vw;
+		border-bottom: 0.4vw solid #4d9461;
+
+	}
+
+	div.itembox form {
+		margin: auto;
+		width: 100%;
+	}
+
+	div.itembox form button {
+		margin: auto;
+		padding: 0 2vw 0 2vw;
+		height: 20vw;
+		font-size: 5vh;
+	}
+}
+
+/*______________________________________ÁLTALÁNOS RÉSZ [form, button, input, stb...]___________________________________*/
+
+button {
+
+    border: 0px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    background-color: #5a5957;
+    font-weight: 700;
+    font-family: 'kalam';
+    font-size: 1.3vw;
+    color: rgba(255, 177, 40, 0.71);
+    border-radius: 5%;
+
+}
+
+input {
+
+	color: #000;
+    border: 0px;
+    background-color: rgba(255, 177, 40, 0.5);
+    font-weight: 600;
+    padding-left: 3px;
+    padding-right: 3px;
+    max-width: 200px;
+
+}
+
+@media screen and (max-width: 1000px) {
+	button {
+		font-size: 3.3vw;
+	}
+}
+
+@media screen and (orientation: portrait) {
+
+	button {
+
+		font-size: 4vh;
+    	margin-top: 4vh;
+
+	}
+
+	input {
+
+		font-size: 6vw;
+
+	}
+}
+
+.done {
+	color: green;
+	text-decoration: line-through;
+}
+
+.color-red {
+	color: darkred;
+}
