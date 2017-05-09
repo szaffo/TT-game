@@ -1,10 +1,15 @@
-b<?php 
+<?php 
 	include 'functions.php';
 
 	session_start();
 
 	if ( ! isset($_SESSION['name'])) {
 		header('Location: ../');
+	}
+
+	$time = RunQuerry("SELECT updated_at FROM arp_users WHERE id = ".$_SESSION['id']);
+	if ($time != $_SESSION['updated_at']) {
+		GetUserData();
 	}
 
 	$pressed = $_REQUEST['pressed'];
@@ -43,10 +48,31 @@ b<?php
 				$way = 'public';
 			break;
 
+		case 'menu-beallitasok':
+				$_SESSION['page'] = 'settings.php';
+				$way = 'public';
+			break;
+
+		case 'settings-save':
+				$_SESSION['page'] = 'settings-save.php';
+				$_SESSION['parameters'] = array(
+													"name" => $_REQUEST['name'],
+													"password" => $_REQUEST['password'],
+													"email" => $_REQUEST['email']
+												);
+				$way = 'mechanic';
+			break;
+
 		case 'item-shop':
 				$_SESSION['page'] = "kaufen.php";
 				$_SESSION["message"] = $_POST["name"];
 				$way = 'mechanic';
+			break;
+
+		case 'item-inventory':
+				$_SESSION['page'] = 'item.php';
+				$_SESSION['itemid'] = $_REQUEST['itemid'];
+				$way = 'public';
 			break;
 		
 		case 'scoreboard-menu':
@@ -61,6 +87,7 @@ b<?php
 				$way = "public";
 			break;
 
+		// what?
 		case 'group-administrate':
 			echo '<pre>';
 			var_dump($_REQUEST["gpadmin-test"]);
