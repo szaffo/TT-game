@@ -8,7 +8,8 @@
 	}
 
 	$time = RunQuerry("SELECT updated_at FROM arp_users WHERE id = ".$_SESSION['id']);
-	if ($time != $_SESSION['updated_at']) {
+
+	if ($time['updated_at'] != $_SESSION['updated_at']) {
 		GetUserData();
 	}
 
